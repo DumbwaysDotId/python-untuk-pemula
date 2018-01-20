@@ -1,25 +1,15 @@
-# string, integer, double, float, boolean, array, obj
+# lists
 
-# string
-x = "x"
-food = "apple pie"
-my_favourite_food = "cheese burger"
-myFavouriteFood = "kebab"
+#            0         1        2        3
+fruits = ["apple", "banana", "mango", "grape"]
 
-# integer
-number = 1
-first_number = 2
-second_number = 3
+#update list #3 value
+fruits[3] = "duwet"
 
-# print(second_number + first_number)
+#add value on lists
+fruits.append("orange")
 
-# double dan float
-decimal = 1.2
-my_decimal = 3.3
+#delete value on list
+del fruits[1]
 
-# print(decimal + my_decimal)
-
-# boolean
-is_clean = True
-
-print(is_clean or False)
+print(fruits)
