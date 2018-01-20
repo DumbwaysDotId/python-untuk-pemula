@@ -1,15 +1,16 @@
-# lists
+# dict
 
-#            0         1        2        3
-fruits = ["apple", "banana", "mango", "grape"]
+profile = {
+    "first_name": "Ega",
+    "last_name": 'Radiegtya',
+    "age": 27,
+    "gender": "male",
+    "is_active": True,
+    "friends": ["adi", "santoso", "juni", "melisa"]
+}
 
-#update list #3 value
-fruits[3] = "duwet"
+friends = profile['friends']
+my_second_friends = friends[1]
 
-#add value on lists
-fruits.append("orange")
-
-#delete value on list
-del fruits[1]
-
-print(fruits)
+# profile['friends'][1]
+print(my_second_friends)
