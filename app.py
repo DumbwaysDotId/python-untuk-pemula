@@ -1,16 +1,8 @@
-# dict
+# list of dict
 
-profile = {
-    "first_name": "Ega",
-    "last_name": 'Radiegtya',
-    "age": 27,
-    "gender": "male",
-    "is_active": True,
-    "friends": ["adi", "santoso", "juni", "melisa"]
-}
+todos = [
+    {"id": 1, "name": "washing car", "is_done": False},
+    {"id": 2, "name": "helping mom", "is_done": True}
+]
 
-friends = profile['friends']
-my_second_friends = friends[1]
-
-# profile['friends'][1]
-print(my_second_friends)
+print(todos[1]['name'])
