@@ -1,22 +1,13 @@
-# for loop
+# input
 
 '''
-for i in range(1, 10):
-    print(i)
+name = raw_input("1. Mohon masukkan nama Anda: ")
+address = raw_input("2. Mohon masukkan alamat Anda: ")
+
+print("Halo %s, alamat Anda berada di %s" % (name, address))
 '''
 
-'''
-phones = ['xiaomi', 'iphone6', 'samsung']
+first_number = raw_input("Masukkan angka #1: ")
+second_number = raw_input("Masukkan angka #2: ")
 
-for phone in phones:
-    print(phone)
-'''
-
-phones = [
-    {"id": 1, "name": "xiaomi"},
-    {"id": 2, "name": "iphone6"},
-    {"id": 3, "name": "samsung"}
-]
-
-for phone in phones:
-    print(phone['name'])
+print(int(first_number) + int(second_number))
