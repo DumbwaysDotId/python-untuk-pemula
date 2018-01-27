@@ -1,13 +1,14 @@
-# input
+# if else conditional
 
-'''
-name = raw_input("1. Mohon masukkan nama Anda: ")
-address = raw_input("2. Mohon masukkan alamat Anda: ")
+age = raw_input("Please input your age: ")
 
-print("Halo %s, alamat Anda berada di %s" % (name, address))
-'''
+#validation
+if age.isdigit() == False:
+    print("Please input correct age format")
+else:
+    age = int(age)
 
-first_number = raw_input("Masukkan angka #1: ")
-second_number = raw_input("Masukkan angka #2: ")
-
-print(int(first_number) + int(second_number))
+    if age < 13:
+      print("You are not allowed to watch this movie!")
+    elif age >= 13:
+      print("You are allowed to watch this movie")
