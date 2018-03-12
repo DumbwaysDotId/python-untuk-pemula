@@ -1,22 +1,25 @@
-# class
-class Person():
+# parent class
+class Person:
+
     name = "Joko"
-    age = 10
-    gender = "male"
 
-    def get_personality(self):
-        return "bad"
+    def walk(self):
+        return "walking"
 
+    def drink(self):
+        return "drinking"
 
+# child class
 class Employee(Person):
-    def __init__(self, **kwargs):
-        k = kwargs
-        self.salary = k['salary']
 
     def get_name(self):
         return self.name
 
-#instantiate class
-employee = Employee(salary=1000)
-employee.name = "Samohong"
-print(employee.name, employee.salary, employee.get_personality())
+    def walk_and_drink(self):
+        drink = self.drink()
+        return "employee is walking n " + drink
+
+employee = Employee()
+employee.name = "Cintya"
+print(employee.get_name())
+print(employee.walk_and_drink())
